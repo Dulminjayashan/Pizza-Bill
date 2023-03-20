@@ -1,3 +1,4 @@
+print("\n")
 while True:
     print("        Welcome to ABC Pizza         ")
     print("Menu ")
@@ -25,11 +26,12 @@ while True:
             break
         else:
             print("Invalid choice. Please try again.")
-            
+    print("\n")         
     #EXTRA ADDING
     print("Do you want something extra added?")
     extra = str(input("Enter YES or NO: ").upper())
-
+    print("\n")
+    
     if extra == "YES":
         print("1. Extra cheese - Rs.100.00")
         print("2. Extra onions - Rs.40.00")
@@ -55,11 +57,11 @@ while True:
     else:
         total2= 0.00
         print("No extras added.")
-       
+    print("\n")   
     #DRINKS
     print("Do you want some drinks?")
     drink = str(input("Enter YES or NO: ").upper())
-
+    print("\n")
     if drink == "YES":    
         print("What drink would you like?")
         print("1. Coke - Rs.200.00")
@@ -87,13 +89,13 @@ while True:
          print("No Drinks.")
     #TP
     tp=total+total2+total3
-         
+    print("\n")     
     #BILL
     print(f"Your order: {pizza}")
     print(f"Added: {extra}")
     print(f"Drinks: {drink}")
     print("Total Price: ",str("Rs"),(tp))
-
+    print("\n")
     while True:
         a = input("Next Customer (Press Enter) ")
         break
